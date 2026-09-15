@@ -38,6 +38,9 @@ The BRS 2.0 draft is the current governing working document. Older specification
 
 Read [`CONTRIBUTING.md`](https://github.com/CafeCore/cafecore-docs/blob/main/CONTRIBUTING.md) before contributing.
 
+## Discussions
+- You can join here [`general`](https://github.com/orgs/CafeCore/discussions/)
+
 ## Planned Direction
 
 The planned MVP focuses on independent dine-in cafés and includes:
