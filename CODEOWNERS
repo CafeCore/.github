@@ -1,0 +1,62 @@
+# ============================================================
+# CafeCore — CODEOWNERS
+# Location: .github/CODEOWNERS
+# Rule: LAST matching pattern wins. Put specific rules BELOW *.
+# Teams: create them at https://github.com/orgs/CafeCore/teams
+# ============================================================
+
+# ---------------------------
+# Global fallback — everything
+# ---------------------------
+*                           @CafeCore/platform-team
+
+# ---------------------------
+# This control-tower repo itself
+# ---------------------------
+/.github/                   @CafeCore/platform-team
+/.github/workflows/         @CafeCore/platform-team
+/.github/CODEOWNERS         @CafeCore/platform-team
+
+# ---------------------------
+# Infrastructure / DevOps
+# ---------------------------
+/infra/                     @CafeCore/platform-team
+/terraform/                 @CafeCore/platform-team
+/helm/                      @CafeCore/platform-team
+/k8s/                       @CafeCore/platform-team
+/docker/                    @CafeCore/platform-team
+/Dockerfile                 @CafeCore/platform-team
+/docker-compose*.yml        @CafeCore/platform-team
+/.github/dependabot.yml     @CafeCore/platform-team
+
+# ---------------------------
+# Application code
+# ---------------------------
+/services/backend/          @CafeCore/backend-team
+/services/frontend/         @CafeCore/frontend-team
+/apps/                      @CafeCore/frontend-team
+/src/backend/               @CafeCore/backend-team
+/src/frontend/              @CafeCore/frontend-team
+
+# ---------------------------
+# Tests & QA
+# ---------------------------
+/tests/                     @CafeCore/qa-team
+/e2e/                       @CafeCore/qa-team
+/__tests__/                 @CafeCore/qa-team
+
+# ---------------------------
+# Docs & product
+# ---------------------------
+/docs/                      @CafeCore/product-team
+/README.md                  @CafeCore/product-team
+/CHANGELOG.md               @CafeCore/product-team
+
+# ---------------------------
+# Security-sensitive paths
+# ---------------------------
+/SECURITY.md                @CafeCore/security-team
+**/auth/**                  @CafeCore/security-team
+**/secrets/**               @CafeCore/security-team
+**/*.pem                    @CafeCore/security-team
+**/*.key                    @CafeCore/security-team
